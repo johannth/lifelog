@@ -1,0 +1,1 @@
+web: gunicorn lifelog.heroku:app -w 1
