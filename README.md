@@ -44,7 +44,8 @@ Version 0.1
 -----------
 
 + API hosted on Heroku using the scheduler add-on to query the third party api-s
-+ Stores data as files on Dropbox, either as .csv or .json using the following example folder structure:
++ Sends events to keen.io.
++ Stores backup of events as files on Dropbox as json using the following example folder structure:
 
 ```
 pocket_read_articles
@@ -65,7 +66,7 @@ Installation
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
-```
+``
 
 
 
