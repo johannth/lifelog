@@ -44,6 +44,7 @@ Version 0.1
 -----------
 
 + API hosted on Heroku using the scheduler add-on to query the third party api-s
++ Use fouth.org to easily access with API data such as the paper API.
 + Sends events to keen.io.
 + Stores backup of events as files on Dropbox as json using the following example folder structure:
 
@@ -62,10 +63,31 @@ api.naveem.com
 Installation
 ============
 
+This project depends on:
+
++ [fouth](https://foauth.org/) for accessing third party data.
++ [keen.io](https://keen.io) for data storage and analytics core.
++ redis for caching.
+
 ```
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+Create an .env:
+
+```
+SECRET_KEY=...
+
+FOUTH_USERNAME=...
+FOUTH_PASSWORD=...
+
+REDIS_URL=...
+
+KEEN_PROJECT_ID=...
+KEEN_WRITE_KEY=...
+KEEN_READ_KEY=...
 ``
 
 

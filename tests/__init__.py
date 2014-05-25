@@ -14,9 +14,3 @@ def app():
 def api_client(app):
     client = APITestClient(app, app.response_class)
     return client
-
-
-def test_index(api_client):
-    response = api_client.get_json("/")
-    assert response.status_code == 200
-    assert response.json == {}
