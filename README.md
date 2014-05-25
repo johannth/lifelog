@@ -21,6 +21,7 @@ Design Statement
 Proposed streams
 ----------------
 
+```
 /
 /wrote
 /read
@@ -39,13 +40,14 @@ Proposed streams
 /food/wines
 /photos
 /location
+```
 
-Version 0.1
------------
+Goals for version 0.1
+---------------------
 
-+ API hosted on Heroku using the scheduler add-on to query the third party api-s
-+ Use fouth.org to easily access with API data such as the paper API.
-+ Sends events to keen.io.
++ API hosted on Heroku using the scheduler add-on to query the third party APIs
++ Use fouth.org to easily access API data such as the Pocket API.
++ Sends events to keen.io for analytics.
 + Stores backup of events as files on Dropbox as json using the following example folder structure:
 
 ```
