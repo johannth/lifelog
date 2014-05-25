@@ -23,7 +23,7 @@ def feed_latest_pocket_data_to_analytics_store(cache, analytics_store):
 
 def save_article_stream_to_analytics_store(article_stream, cache, analytics_store):
     for i, article_event in enumerate(article_stream):
-        print("Processing article event {} - {}:{} {}".format(
+        print(u"Processing article event {} - {}:{} {}".format(
             i,
             article_event["item_id"],
             article_event.get("resolved_title", "No Title"),
